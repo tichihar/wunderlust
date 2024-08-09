@@ -665,9 +665,6 @@ footer a {
         gap: 2em;
     }
 
-    #plan div {
-
-    }
     #plan section {
         height: 18em;
     }
@@ -768,7 +765,7 @@ footer a {
     }
 
     main {
-        margin-top: 10em;
+        padding-top: 3em;
     }
 
     #intro {
