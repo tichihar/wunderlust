@@ -142,7 +142,7 @@ footer p, footer a {
     font-size: 16px;
 }
 
-/*------- global styles -------*/
+/*------- global / small styles -------*/
 body {
     overflow-x: hidden;
 }
@@ -537,6 +537,7 @@ footer a {
     color: var(--black);
 }
 
+/*------- Hover Styles -------*/
 @media (hover:hover) {
 
     #menu-toggle a:hover {
@@ -548,6 +549,7 @@ footer a {
     }
 }
 
+/*------- Medium Screen Styles -------*/
 @media screen and (min-width:500px){
     header {
         position: unset;
@@ -726,6 +728,7 @@ footer a {
     }
 }
 
+/*------- Large screen styles -------*/
 @media screen and (min-width: 1200px) {
     #logo {
         top: 2.5em;
