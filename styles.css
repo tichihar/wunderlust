@@ -149,6 +149,12 @@ body {
     overflow: hidden;
 }
 
+#skip:focus{
+    width: auto;
+    height: auto;
+    position: static;
+}
+
 header {
     position: relative;
     width: 80%;
