@@ -4,7 +4,12 @@
    License: none (public domain)
 */
 
-/* Reset CSS */
+
+/*------- Reset CSS -------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,12 +57,13 @@ table {
   box-sizing: border-box;
 }
 
-/* import fonts */
+
+/*------- import fonts -------*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Molle&display=swap');
-/* Montserrant -- italic, weight(100 ~ 900) */
 
-/* adding universal values*/
+
+/*------- universal variables -------*/
 :root {
     --yellow: #F6D64A;
     --teal: #55BCD5;
@@ -70,7 +76,7 @@ table {
 }
 
 
-/* fonts */
+/*------- fonts --------*/
 h1, h2, h3 {
     font-family: "Molle", cursive;
 }
@@ -135,7 +141,8 @@ li, label, #about h4, h4, form, legend, ::placeholder, #mySubmit, .custom-select
 footer p, footer a {
     font-size: 16px;
 }
-/* visual */
+
+/*------- global styles -------*/
 body {
     overflow-x: hidden;
 }
@@ -265,12 +272,19 @@ header p::after {
     z-index: 1;
 }
 
-#sr-only {
-
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    left: -10000px;
+    overflow: hidden;
 }
 
-nav h2 {
-    display: none;
+.sr-only:focus {
+    width: auto;
+    height: auto;
+    position: static;
 }
 
 main {
